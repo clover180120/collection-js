@@ -1,7 +1,3 @@
-const hello = () => {
-  console.log('Hello');
-};
+import * as modules from './modules';
 
-export {
-  hello,
-};
+export default modules;
