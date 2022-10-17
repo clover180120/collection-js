@@ -1,4 +1,4 @@
-import { map, every, filter, some, find, reject, forEach, reduce } from './modules';
+import { map, every, filter, some, find, reject, forEach, reduce, includes } from './modules';
 
 class Collection {
   private items;
@@ -55,8 +55,8 @@ class Collection {
     return this.items[idx];
   }
 
-  includes(callable: Function) {
-    return some(this.items, callable);
+  includes(e: any) {
+    return includes(this.items, e);
   }
 }
 
